@@ -8,7 +8,6 @@
 
 #include <boost/lexical_cast.hpp>
 
-#include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
@@ -64,16 +63,6 @@ ribi::Help ribi::SpeciesOfTheRingsMenuDialog::GetHelp() const noexcept
     }
   );
 }
-
-boost::shared_ptr<const ribi::Program> ribi::SpeciesOfTheRingsMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    //new ribi::ProgramSpeciesOfTheRings
-  };
-  assert(p);
-  return p;
-}
-
 
 std::string ribi::SpeciesOfTheRingsMenuDialog::GetVersion() const noexcept
 {
