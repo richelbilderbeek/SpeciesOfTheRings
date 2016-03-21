@@ -27,3 +27,8 @@
 *.out
 *.app
 *.pro.user
+moc_*
+ui_*
+qrc_*
+Makefile
+SpeciesOfTheRingsDesktop
