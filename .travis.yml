@@ -10,7 +10,6 @@ before_install:
 install: 
   - sudo apt-get install -qq g++-5
 
-
 addons:
   apt:
     sources:
@@ -27,4 +26,3 @@ script:
 
 after_success: 
   - codecov
-
