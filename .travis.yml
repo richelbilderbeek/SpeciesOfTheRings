@@ -20,8 +20,10 @@ addons:
     - g++-5
     - libboost1.55-all-dev
 
-script: 
+before_script: 
   - ./install_other_githubs.sh
+
+script: 
   - ./build_desktop.sh
 
 after_success: 
