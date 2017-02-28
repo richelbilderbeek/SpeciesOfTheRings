@@ -5,6 +5,7 @@
 #pragma GCC diagnostic ignored "-Weffc++"
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
+#include <random>
 #include "qthideandshowdialog.h"
 #include "species.h"
 #include "space.h"
