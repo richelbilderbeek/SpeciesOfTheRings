@@ -1,12 +1,12 @@
-INCLUDEPATH += ../SpeciesOfTheRings
+INCLUDEPATH += $$PWD
 
 SOURCES += \
-    ../SpeciesOfTheRings/speciesoftheringsmenudialog.cpp \
-    ../SpeciesOfTheRings/space.cpp \
-    ../SpeciesOfTheRings/species.cpp
+    $$PWD/speciesoftheringsmenudialog.cpp \
+    $$PWD/space.cpp \
+    $$PWD/species.cpp
 
 HEADERS += \
-    ../SpeciesOfTheRings/speciesoftheringsmenudialog.h \
-    ../SpeciesOfTheRings/space.h \
-    ../SpeciesOfTheRings/species.h
+    $$PWD/speciesoftheringsmenudialog.h \
+    $$PWD/space.h \
+    $$PWD/species.h
 

@@ -1,12 +1,12 @@
-include(../SpeciesOfTheRings/SpeciesOfTheRingsConsole.pri)
+include(SpeciesOfTheRingsConsole.pri)
 
 SOURCES += \
-    ../SpeciesOfTheRings/qtspeciesoftheringsmaindialog.cpp \
-    ../SpeciesOfTheRings/qtfractionimage.cpp \
+    $$PWD/qtspeciesoftheringsmaindialog.cpp \
+    $$PWD/qtfractionimage.cpp \
 
 HEADERS  +=  \
-    ../SpeciesOfTheRings/qtspeciesoftheringsmaindialog.h \
-    ../SpeciesOfTheRings/qtfractionimage.h
+    $$PWD/qtspeciesoftheringsmaindialog.h \
+    $$PWD/qtfractionimage.h
 
-FORMS    += \
-    ../SpeciesOfTheRings/qtspeciesoftheringsmaindialog.ui
+FORMS += \
+    $$PWD/qtspeciesoftheringsmaindialog.ui
