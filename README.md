@@ -11,4 +11,4 @@ Spatial simulation about ring species in C++ using Qt.
 
 ## Video's
 
- * The formation of a ring species: [.ogv](http://richelbilderbeek.nl/SpeciesOfTheRings42.ogv)
+ * The formation of a ring species: [.ogv](http://richelbilderbeek.nl/SpeciesOfTheRings42.ogv) [YouTube](https://youtu.be/rSGARz6_83Q)
