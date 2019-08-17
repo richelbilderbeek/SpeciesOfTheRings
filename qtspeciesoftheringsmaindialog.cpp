@@ -1,7 +1,3 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
 #include "qtspeciesoftheringsmaindialog.h"
 
 #include <cassert>
@@ -9,11 +5,8 @@
 #include <QDesktopWidget>
 #include <QTimer>
 #include "qtfractionimage.h"
-#include "histogram_r.h"
 #include "fileio.h"
-#include "testtimer.h"
 #include "ui_qtspeciesoftheringsmaindialog.h"
-#pragma GCC diagnostic pop
 
 ribi::QtSpeciesOfTheRingsMainDialog::QtSpeciesOfTheRingsMainDialog(QWidget *parent)
  :  ribi::QtHideAndShowDialog(parent),
@@ -106,12 +99,14 @@ void ribi::QtSpeciesOfTheRingsMainDialog::Display()
     m_trait_grid
   );
 
+  #ifdef SHOW_TRAITS_AS_R_HISTOGRAM
   const auto traits = CollectTraits();
   ribi::fileio::FileIo f;
   const std::string filename = f.GetTempFileName(".png");
   ribi::HistogramR().ToHistogram(traits,filename,ribi::HistogramR::GraphicsFormat::png);
   ui->image_histogram->setPixmap(QPixmap(filename.c_str()));
   f.DeleteFile(filename);
+  #endif
 }
 
 int ribi::QtSpeciesOfTheRingsMainDialog::GetHeight() const noexcept
@@ -305,7 +300,6 @@ void ribi::QtSpeciesOfTheRingsMainDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   {
     const QtSpeciesOfTheRingsMainDialog d;
     const int cur_height{d.GetHeight()};
