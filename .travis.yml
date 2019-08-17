@@ -9,7 +9,7 @@ install:
   # Qt5
   - sudo apt-get install -qq qt5-qmake qt5-default
   # R
-  - sudo apt-get install r-base r-base-dev
+  - sudo apt-get install r-base r-base-dev r-cran-rinside
   - sudo Rscript -e 'source("install_r_packages.R")'
   # Codecov
   - sudo pip install codecov
