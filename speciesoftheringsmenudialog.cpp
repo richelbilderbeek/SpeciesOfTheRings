@@ -52,3 +52,15 @@ ribi::Help ribi::SpeciesOfTheRingsMenuDialog::GetHelp() const noexcept
     }
   );
 }
+
+std::string ribi::SpeciesOfTheRingsMenuDialog::GetVersion() const noexcept
+{
+  return "2.0";
+}
+
+std::vector<std::string> ribi::SpeciesOfTheRingsMenuDialog::GetVersionHistory() const noexcept
+{
+  return {
+    "Version 2.0: current version"
+  };
+}
