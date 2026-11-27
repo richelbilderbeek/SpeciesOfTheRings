@@ -1,12 +1,9 @@
 # SpeciesOfTheRings
 
+[![Codecov](https://codecov.io/gh/richelbilderbeek/SpeciesOfTheRings/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/SpeciesOfTheRings)
+
 [Go to the nicely rendered
 website](https://richelbilderbeek.github.io/SpeciesOfTheRings/).
-
-Branch|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-`master`|[![Build Status](https://travis-ci.org/richelbilderbeek/SpeciesOfTheRings.svg?branch=master)](https://travis-ci.org/richelbilderbeek/SpeciesOfTheRings)|[![codecov.io](https://codecov.io/github/richelbilderbeek/SpeciesOfTheRings/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/SpeciesOfTheRings/branch/master)
-`develop`|[![Build Status](https://travis-ci.org/richelbilderbeek/SpeciesOfTheRings.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/SpeciesOfTheRings)|[![codecov.io](https://codecov.io/github/richelbilderbeek/SpeciesOfTheRings/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/SpeciesOfTheRings/branch/develop)
 
 Spatial simulation about ring species in C++ using Qt.
 
